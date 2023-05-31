@@ -1,6 +1,6 @@
 -- import: fastn
 
--- fastn.package: <user_name>.github.io/<repo_name>
+-- fastn.package: sarvom.github.io/open-fastn
 
 -- fastn.dependency: fastn-community.github.io/doc-site as ds
 
