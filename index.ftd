@@ -16,26 +16,26 @@ OPEN FASTN will be a two week long open source contribution to FASTN Web Compone
 Library for supporting the next generation of programmers to build their projects more 
 easily. 
 
--- lib.container-with-title: How to contribute?
+-- lib.container-with-title: Why OPEN FASTN?
 
--- lib.image-with-content: Connect your wallet
-pic: $assets.files.images.connect.png
+-- lib.image-with-content: Great opportunity to contribute to the community
+pic: $assets.files.images.community.jpg
 number: 01
 
 Design your drop of 1-5 NFTs and send us your artwork. We get that you're creative, so 
 take note: Sweet supports image, audio and video media assets. Make your NFT drop 
 interesting, engaging and fun.
 
--- lib.image-with-content: Claim NFT
-pic: $assets.files.images.claim.png
+-- lib.image-with-content: Win exciting swags
+pic: $assets.files.images.swag.jpg
 number: 02
 
 Design your drop of 1-5 NFTs and send us your artwork. We get that you're creative, so 
 take note: Sweet supports image, audio and video media assets. Make your NFT drop 
 interesting, engaging and fun.
 
--- lib.image-with-content: View NFT
-pic: $assets.files.images.view.png
+-- lib.image-with-content: Get recognized for your contributions.
+pic: $assets.files.images.contributions.png
 number: 03
 
 Design your drop of 1-5 NFTs and send us your artwork. We get that you're creative, so 
@@ -44,7 +44,7 @@ interesting, engaging and fun.
 
 -- end: lib.container-with-title
 
--- lib.container-with-title: FAQs
+-- lib.container-with-title: How to contribute?
 
 -- lib.faq: How do I get a crypto wallet?
 

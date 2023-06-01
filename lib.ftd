@@ -220,6 +220,8 @@ string cta-text-4:
 string cta-text-5:
 string cta-button-1:
 boolean $is-active: false
+ftd.image-src toggle: $assets.files.images.toggle.png
+boolean $mode: false
 
 -- ftd.row:
 width: fill-container
@@ -237,6 +239,7 @@ height.fixed.px: 72
 -- ftd.row:
 width: fill-container
 spacing: space-between
+align-self: center
 
 -- ftd.row:
 align-self: center
@@ -275,7 +278,8 @@ color: $inherited.colors.text
 -- end: ftd.row
 
 -- ftd.row:
-margin-vertical.px: 29
+margin-vertical.px: 32
+spacing.fixed.px: 8
 
 -- ftd.text: $navbar-desktop.cta-button-1
 role: $inherited.types.label-large
@@ -291,6 +295,24 @@ border-color if { navbar-desktop.is-active }: $inherited.colors.cta-primary.hove
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active, v = false)
 color: $inherited.colors.text
+
+-- ftd.image: 
+if: { !navbar-desktop.mode }
+src: $navbar-desktop.toggle
+height.fixed.px: 32
+width.fixed.px: 32
+$on-click$: $ftd.set-bool($a = $navbar-desktop.mode, v = true)
+$on-click$: $ftd.enable-dark-mode()
+align-self: center
+
+-- ftd.image: 
+if: { navbar-desktop.mode }
+src: $navbar-desktop.toggle
+height.fixed.px: 32
+width.fixed.px: 32
+$on-click$: $ftd.set-bool($a = $navbar-desktop.mode, v = false)
+$on-click$: $ftd.enable-light-mode()
+align-self: center
 
 -- end: ftd.row
 
@@ -408,7 +430,6 @@ classes: color-2
 margin-vertical.px: 24
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-opacity: 0.7
 
 -- end: ftd.column
 
@@ -438,7 +459,6 @@ margin-top.px: 24
 margin-bottom.px: 48
 role: $inherited.types.heading-small
 color: $inherited.colors.text
-opacity: 0.7
 
 -- end: ftd.column
 
@@ -708,11 +728,13 @@ width: fill-container
 margin-bottom.px: 100
 
 -- ftd.row:
-spacing.fixed.px: 215
-margin-horizontal.px: 134
+spacing.fixed.px: 200
+margin-horizontal.px: 120
 
 -- ftd.image:
 src: $image-with-content-desktop.pic
+width.fixed.percent: 40
+height: auto
 
 -- ftd.column:
 margin-vertical.px: 50
