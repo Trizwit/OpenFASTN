@@ -1,6 +1,6 @@
 -- import: sarvom.github.io/open-fastn/assets
 -- import: sarvom.github.io/holy-angel-typography 
--- import: sarvom.github.io/Open-FASTN-CS 
+-- import: sarvom.github.io/open-fastn-cs 
 
 
 -- component page:
@@ -16,7 +16,7 @@ children c:
 -- ftd.column:
 width: fill-container
 types: $holy-angel-typography.types
-colors: $Open-FASTN-CS.main
+colors: $open-fastn-cs.main
 background.solid: $inherited.colors.background.base
 
 -- navbar: 
