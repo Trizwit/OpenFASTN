@@ -9,15 +9,14 @@ heading: Building a resilient future through
 
 A platform to develop your skills through contributing to community
 
--- lib.countdown-with-info: 2nd Regional cybersecurity conference
-pic: $assets.files.images.conf.png
-heading: 10 | May | 2023
-icon: $assets.files.images.location_on.png
-text: University Theatre, SFJ Blog, Holy Angel University
-counter: 12 days : 16 hr : 30 min
-reminder: Time Left to claim NFT
+-- lib.about: About 
+pic: $assets.files.images.opensource.jpg
 
--- lib.container-with-title: How to Claim
+OPEN FASTN will be a two week long open source contribution to FASTN Web Components 
+Library for supporting the next generation of programmers to build their projects more 
+easily. 
+
+-- lib.container-with-title: How to contribute?
 
 -- lib.image-with-content: Connect your wallet
 pic: $assets.files.images.connect.png
@@ -44,15 +43,6 @@ take note: Sweet supports image, audio and video media assets. Make your NFT dro
 interesting, engaging and fun.
 
 -- end: lib.container-with-title
-
--- lib.about: About Us
-pic: $assets.files.images.people.png
-
-A design approach is a general philosophy that may or may not include a guide for 
-specific methods. A design approach is a general philosophy that may or may not include 
-a guide for specific methods.A design approach is a general philosophy that may or may 
-not include a guide for specific methods.A design approach is a general philosophy 
-that may or may not include a guide for specific methods.
 
 -- lib.container-with-title: FAQs
 

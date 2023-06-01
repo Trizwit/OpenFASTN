@@ -155,6 +155,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
 color: $inherited.colors.text
+link: index.html#about
 
 -- ftd.text: $navbar-mobile.cta-text-3
 role: $inherited.types.label-large
@@ -251,6 +252,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
 color: $inherited.colors.text
+link: index.html#about
 
 -- ftd.text: $navbar-desktop.cta-text-3
 role: $inherited.types.label-large
@@ -468,7 +470,6 @@ string reminder:
 -- ftd.column:
 width: fill-container
 margin-bottom.px: 100
-background.image: $assets.files.images.bg.png
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
@@ -789,9 +790,12 @@ body body:
 
 -- ftd.column:
 padding-horizontal.px: 10
+margin-vertical.px if { ftd.device == "desktop" } : 100
+id: about
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
+margin-vertical.px: 24
 
 -- ftd.column:
 margin-vertical.px: 40
@@ -817,11 +821,10 @@ align-self: center
 
 -- ftd.row:
 if: { ftd.device == "desktop" }
+margin-horizontal.px: 96
 
 -- ftd.column:
-margin-vertical.px: 138
-margin-left.px: 165
-margin-right.px: 125
+margin-vertical.px: 120
 
 -- ftd.text: $about.title
 role: $inherited.types.heading-large
@@ -836,7 +839,7 @@ opacity: 0.7
 
 -- ftd.image:
 src: $about.pic
-
+border-radius.px: 20
 
 -- end: ftd.row
 
