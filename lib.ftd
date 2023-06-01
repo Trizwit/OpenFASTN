@@ -1,0 +1,19 @@
+-- import: sarvom.github.io/open-fastn/assets
+
+
+-- component page:
+children c:
+
+-- ftd.column:
+width: fill-container
+background.solid: $inherited.colors.background.base
+
+-- ftd.row:
+width: fill-container
+children: $page.c
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: page
