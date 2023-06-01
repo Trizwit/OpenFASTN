@@ -6,11 +6,8 @@
 
 -- lib.hero: OPEN FASTN
 heading: Building a resilient future through
-cover: $assets.files.images.hero.png
 
-From safeguarding your personal data to protecting your community, our aim is to equip 
-you with the latest cyber education tools & strategies. Let's work together to build a 
-resilient future - Be Secured, Stay Secured!"
+A platform to develop your skills through contributing to community
 
 -- lib.countdown-with-info: 2nd Regional cybersecurity conference
 pic: $assets.files.images.conf.png

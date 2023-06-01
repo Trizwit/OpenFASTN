@@ -230,6 +230,8 @@ sticky: true
 -- ftd.image:
 src: $navbar-desktop.logo
 align-self: center
+height.fixed.px: 72
+
 
 -- ftd.row:
 width: fill-container
@@ -306,10 +308,10 @@ color: $inherited.colors.text
 
 -- component footer:
 caption text:
-ftd.image-src logo: $assets.files.images.admint-logo.png
+ftd.image-src logo: $assets.files.images.logo.png
 ftd.image-src icon-1: $assets.files.images.linkedin.png
-ftd.image-src icon-2: $assets.files.images.youtube.png
-ftd.image-src icon-3: $assets.files.images.fb.png
+ftd.image-src icon-2: $assets.files.images.twitter.png
+ftd.image-src icon-3: $assets.files.images.github.png
 string url-1: /
 string url-2: /
 string url-3: /
@@ -330,25 +332,33 @@ border-bottom-width.px: 2
 color: $inherited.colors.text
 
 -- ftd.image: $footer.icon-1
+height.fixed.px: 32
+width.fixed.px: 32
 link: $footer.url-1
 
 -- ftd.image: $footer.icon-2
+height.fixed.px: 32
+width.fixed.px: 32
 link: $footer.url-2
 
 -- ftd.image: $footer.icon-3
+height.fixed.px: 32
+width.fixed.px: 32
 link: $footer.url-3
 
 -- end: ftd.row
 
 -- ftd.row:
-margin-top.px: 32
+margin-top.px: 16
 spacing.fixed.px: 10
 
 -- ftd.text: $footer.text
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+align-self: center
 
 -- ftd.image: $footer.logo
+height.fixed.px: 60
 
 -- end: ftd.row
 
@@ -366,13 +376,13 @@ color: $inherited.colors.text
 
 
 -- component hero:
-ftd.image-src cover:
 caption title:
 string heading:
 body content:
 
 -- ftd.column:
 width: fill-container
+align-content: center
 margin-top.px: 100
 
 -- ftd.column:
@@ -400,26 +410,20 @@ opacity: 0.7
 
 -- end: ftd.column
 
--- ftd.image:
-src: $hero.cover
-width: fill-container
-align-self: center
-padding-horizontal.px: 20
-
 -- end: ftd.column
 
 -- ftd.row:
 if: { ftd.device == "desktop" }
-background.image: $assets.files.images.hero-bg-1.png
 
 -- ftd.column:
-margin-horizontal.px: 33
-width.fixed.percent: 50
+margin-horizontal.px: 48
+width: fill-container
+align-content: center
+align-self: center
 
 -- ftd.text: $hero.heading
 role: $inherited.types.heading-large
 color: $inherited.colors.text
-margin-right.px: 125
 margin-bottom.px: 20
 
 -- ftd.text: $hero.title
@@ -430,14 +434,11 @@ classes: color-2
 -- ftd.text: $hero.content
 margin-top.px: 24
 margin-bottom.px: 48
-role: $inherited.types.copy-large
+role: $inherited.types.heading-small
 color: $inherited.colors.text
 opacity: 0.7
 
 -- end: ftd.column
-
--- ftd.image:
-src: $hero.cover
 
 -- end: ftd.row
 
@@ -969,14 +970,14 @@ align-self: center
 
 
 -- ftd.linear-gradient lg:
-direction: bottom-left
+direction: top-left
 colors: $color-values-2
 
 -- ftd.linear-gradient-color list color-values-2:
 
--- ftd.linear-gradient-color: #6F59E9
+-- ftd.linear-gradient-color: #2eef71
 
--- ftd.linear-gradient-color: #D12EEF
+-- ftd.linear-gradient-color: #2208b3
 
 -- end: color-values-2
 
