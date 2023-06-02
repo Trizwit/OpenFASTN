@@ -106,7 +106,7 @@ ftd.image-src menu: $assets.files.images.menu.png
 ftd.image-src close: $assets.files.images.close.png
 boolean $open: false
 boolean $is-active: false
-ftd.image-src toggle: $assets.files.images.toggle.png
+;; ftd.image-src toggle: $assets.files.images.toggle.png
 boolean $mode: false
 
 -- ftd.column:
@@ -128,23 +128,23 @@ height.fixed.px: 50
 align-self: center
 spacing.fixed.px: 4
 
--- ftd.image: 
-if: { !navbar-mobile.mode }
-src: $navbar-mobile.toggle
-height.fixed.px: 24
-width.fixed.px: 24
-$on-click$: $ftd.set-bool($a = $navbar-mobile.mode, v = true)
-$on-click$: $ftd.enable-dark-mode()
-align-self: center
+;; -- ftd.image: 
+;; if: { !navbar-mobile.mode }
+;; src: $navbar-mobile.toggle
+;; height.fixed.px: 24
+;; width.fixed.px: 24
+;; $on-click$: $ftd.set-bool($a = $navbar-mobile.mode, v = true)
+;; $on-click$: $ftd.enable-dark-mode()
+;; align-self: center
 
--- ftd.image: 
-if: { navbar-mobile.mode }
-src: $navbar-mobile.toggle
-height.fixed.px: 24
-width.fixed.px: 24
-$on-click$: $ftd.set-bool($a = $navbar-mobile.mode, v = false)
-$on-click$: $ftd.enable-light-mode()
-align-self: center
+;; -- ftd.image: 
+;; if: { navbar-mobile.mode }
+;; src: $navbar-mobile.toggle
+;; height.fixed.px: 24
+;; width.fixed.px: 24
+;; $on-click$: $ftd.set-bool($a = $navbar-mobile.mode, v = false)
+;; $on-click$: $ftd.enable-light-mode()
+;; align-self: center
 
 -- ftd.image:
 if: { !navbar-mobile.open }
@@ -248,7 +248,7 @@ optional string cta-text-4:
 optional string cta-text-5:
 string cta-button-1:
 boolean $is-active: false
-ftd.image-src toggle: $assets.files.images.toggle.png
+;; ftd.image-src toggle: $assets.files.images.toggle.png
 boolean $mode: false
 
 -- ftd.row:
@@ -328,23 +328,23 @@ $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active, v = false)
 color: $inherited.colors.text-strong
 
--- ftd.image: 
-if: { !navbar-desktop.mode }
-src: $navbar-desktop.toggle
-height.fixed.px: 32
-width.fixed.px: 32
-$on-click$: $ftd.set-bool($a = $navbar-desktop.mode, v = true)
-$on-click$: $ftd.enable-dark-mode()
-align-self: center
+;; ftd.image: 
+;; if: { !navbar-desktop.mode }
+;; src: $navbar-desktop.toggle
+;; height.fixed.px: 32
+;; width.fixed.px: 32
+;; $on-click$: $ftd.set-bool($a = $navbar-desktop.mode, v = true)
+;; $on-click$: $ftd.enable-dark-mode()
+;; align-self: center
 
--- ftd.image: 
-if: { navbar-desktop.mode }
-src: $navbar-desktop.toggle
-height.fixed.px: 32
-width.fixed.px: 32
-$on-click$: $ftd.set-bool($a = $navbar-desktop.mode, v = false)
-$on-click$: $ftd.enable-light-mode()
-align-self: center
+;;  ftd.image: 
+;; if: { navbar-desktop.mode }
+;; src: $navbar-desktop.toggle
+;; height.fixed.px: 32
+;; width.fixed.px: 32
+;; $on-click$: $ftd.set-bool($a = $navbar-desktop.mode, v = false)
+;; $on-click$: $ftd.enable-light-mode()
+;; align-self: center
 
 -- end: ftd.row
 
