@@ -21,17 +21,18 @@ engage with the FASTN Web Components Library and create unique and valuable comp
 The aim is to gather a diverse range of contributors, including experienced 
 developers and newcomers, fostering an inclusive and supportive community.
 
--- lib.image-with-button: CYBERSECURITY  CONFERENCE  TOKEN
-pic: $assets.files.images.swag.jpg
-text-1: **Blockchain** : 
-text-2: **POAP Type** : 
-val-1: Polygon
-val-2: Polygon
-button: Claim Now
+-- lib.image-with-button: OPEN FASTN Campaign
+pic: $assets.files.images.open-fastn.png
+text-1: **Starts on** : 
+text-2: **Ends on** : 
+val-1: 5th June 2023
+val-2: 19th June 2023
+button: Participate
 
-This POAP or Proof of Attendance Protocol is a non-fungible token that proves you 
-participated in the 2nd Regional Cybersecurity Conference conducted by The School of 
-Computing, Holy Angel University on 10th May 2023. 
+Throughout the two-week duration of OPEN FASTN, participants will have access to 
+resources, support, and guidance to facilitate their contributions. The campaign 
+organizers have created a dedicated channel on the FASTN Discord server, where 
+participants can share their work, seek feedback, and connect with fellow contributors.
 
 -- lib.container-with-title: Why OPEN FASTN?
 
@@ -59,58 +60,62 @@ Design your drop of 1-5 NFTs and send us your artwork. We get that you're creati
 take note: Sweet supports image, audio and video media assets. Make your NFT drop 
 interesting, engaging and fun.
 
+-- lib.image-with-content: Grow through learning and skill-building
+pic: $assets.files.images.skill.png
+number: 04
+
+Design your drop of 1-5 NFTs and send us your artwork. We get that you're creative, so 
+take note: Sweet supports image, audio and video media assets. Make your NFT drop 
+interesting, engaging and fun.
+
 -- end: lib.container-with-title
 
 -- lib.container-with-title: How to contribute?
 
--- lib.faq: How do I get a crypto wallet?
+-- ftd.iframe:
+youtube: https://www.youtube.com/watch?v=yzeVMecydCE
+width: fill-container
+height.fixed.px if { ftd.device == "desktop" }: 768
+padding-horizontal.px if { ftd.device == "desktop" }: 120
+padding-horizontal.px if { ftd.device == "mobile" }: 24
+margin-bottom.px: 64
+
+
+-- lib.faq: Join FASTN Discord server
 
 Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
 wallet. Please note that the max mint number also applies to the public mint time 
 period. If you reach your max mint during the allow list sale, you will not be able to 
 mint more pieces on that wallet even in the public mint window.
 
--- lib.faq: What is a POAP token?
+-- lib.faq: Learn how to build components
 
 Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
 wallet. Please note that the max mint number also applies to the public mint time 
 period. If you reach your max mint during the allow list sale, you will not be able to 
 mint more pieces on that wallet even in the public mint window.
 
--- lib.faq: Which blockchain are these tokens minted on?
+-- lib.faq: Build 5 Web Components using FASTN as per standards (To be eligible for Swag)
 
 Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
 wallet. Please note that the max mint number also applies to the public mint time 
 period. If you reach your max mint during the allow list sale, you will not be able to 
 mint more pieces on that wallet even in the public mint window.
 
--- lib.faq: Do I have to pay anything to claim this NFT?
+-- lib.faq: Create Pull Request to Trizwit/FastnUI Library Repository
 
 Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
 wallet. Please note that the max mint number also applies to the public mint time 
 period. If you reach your max mint during the allow list sale, you will not be able to 
 mint more pieces on that wallet even in the public mint window.
 
--- lib.faq: How long will it take for the NFT to arrive in my wallet ?
+-- lib.faq: Share your work in OPEN FASTN Channel in FASTN Discord Server.
 
 Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
 wallet. Please note that the max mint number also applies to the public mint time 
 period. If you reach your max mint during the allow list sale, you will not be able to 
 mint more pieces on that wallet even in the public mint window.
 
--- lib.faq: How can I use this POAP token in the future?
-
-Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
-wallet. Please note that the max mint number also applies to the public mint time 
-period. If you reach your max mint during the allow list sale, you will not be able to 
-mint more pieces on that wallet even in the public mint window.
-
--- lib.faq: Can I trade, sell or give this token to someone else?
-
-Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
-wallet. Please note that the max mint number also applies to the public mint time 
-period. If you reach your max mint during the allow list sale, you will not be able to 
-mint more pieces on that wallet even in the public mint window.
 
 -- end: lib.container-with-title
 
