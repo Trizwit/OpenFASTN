@@ -527,7 +527,6 @@ boolean $is-active: false
 width: fill-container
 padding-vertical.px if { ftd.device == "desktop" }: 150
 padding-vertical.px if { ftd.device == "mobile" }: 24
-background.image: $assets.files.images.bg.png
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
