@@ -7,9 +7,9 @@
 ftd.image-src logo: $assets.files.images.logo.png
 string cta-text-1: Home
 string cta-text-2: About
-string cta-text-3: How To Contribute
-string cta-text-4: About Us
-string cta-text-5: FAQs
+string cta-text-3: Partcipate
+string cta-text-4: Contribute
+;; string cta-text-5: FAQs
 string cta-button-1: Partcipate
 children c:
 
@@ -25,7 +25,7 @@ cta-text-1: $page.cta-text-1
 cta-text-2: $page.cta-text-2
 cta-text-3: $page.cta-text-3
 cta-text-4: $page.cta-text-4
-cta-text-5: $page.cta-text-5
+;; cta-text-5: $page.cta-text-5
 cta-button-1: $page.cta-button-1
 
 -- ftd.column:
@@ -54,8 +54,8 @@ ftd.image-src logo:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
-string cta-text-4:
-string cta-text-5:
+optional string cta-text-4:
+optional string cta-text-5:
 string cta-button-1:
 
 -- ftd.column:
@@ -99,8 +99,8 @@ ftd.image-src logo:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
-string cta-text-4:
-string cta-text-5:
+optional string cta-text-4:
+optional string cta-text-5:
 string cta-button-1:
 ftd.image-src menu: $assets.files.images.menu.png
 ftd.image-src close: $assets.files.images.close.png
@@ -190,12 +190,14 @@ margin-horizontal.px: 32
 color: $inherited.colors.text
 
 -- ftd.text: $navbar-mobile.cta-text-4
+if: {navbar-mobile.cta-text-4 != NULL}
 role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
 color: $inherited.colors.text
 
 -- ftd.text: $navbar-mobile.cta-text-5
+if: {navbar-mobile.cta-text-5 != NULL}
 role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
@@ -242,8 +244,8 @@ ftd.image-src logo:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
-string cta-text-4:
-string cta-text-5:
+optional string cta-text-4:
+optional string cta-text-5:
 string cta-button-1:
 boolean $is-active: false
 ftd.image-src toggle: $assets.files.images.toggle.png
@@ -290,12 +292,14 @@ margin-horizontal.px: 32
 color: $inherited.colors.text
 
 -- ftd.text: $navbar-desktop.cta-text-4
+if: {navbar-desktop.cta-text-4 != NULL}
 role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
 color: $inherited.colors.text
 
 -- ftd.text: $navbar-desktop.cta-text-5
+if: {navbar-desktop.cta-text-5 != NULL}
 role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
@@ -427,7 +431,7 @@ height.fixed.px: 60
 
 -- component hero:
 caption title:
-string heading:
+optional string heading:
 body content:
 
 -- ftd.column:
@@ -444,6 +448,7 @@ padding-horizontal.px: 20
 align-content: center
 
 -- ftd.text: $hero.heading
+if: {hero.heading != NULL}
 role: $inherited.types.heading-medium
 color: $inherited.colors.text
 margin-bottom.px: 20
@@ -455,7 +460,7 @@ classes: color-2
 
 -- ftd.text: $hero.content
 margin-vertical.px: 12
-role: $inherited.types.heading-small
+role: $inherited.types.heading-medium
 color: $inherited.colors.text
 text-align: center
 
@@ -474,6 +479,7 @@ align-content: center
 align-self: center
 
 -- ftd.text: $hero.heading
+if: {hero.heading != NULL}
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 margin-bottom.px: 20
@@ -486,7 +492,7 @@ classes: color-2
 -- ftd.text: $hero.content
 margin-top.px: 24
 margin-bottom.px: 48
-role: $inherited.types.heading-small
+role: $inherited.types.heading-medium
 color: $inherited.colors.text
 
 -- end: ftd.column
@@ -496,6 +502,196 @@ color: $inherited.colors.text
 -- end: ftd.column
 
 -- end: hero
+
+
+
+
+
+
+
+
+
+
+-- component image-with-button:
+ftd.image-src pic:
+caption title:
+body body:
+string text-1:
+string text-2:
+string val-1:
+string val-2:
+string button:
+boolean $is-active: false
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px if { ftd.device == "desktop" }: 150
+padding-vertical.px if { ftd.device == "mobile" }: 24
+background.image: $assets.files.images.bg.png
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+margin-horizontal.px: 20
+spacing.fixed.px: 56
+
+-- ftd.column:
+
+-- ftd.text: $image-with-button.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+margin-bottom.px: 24
+
+-- ftd.text: $image-with-button.body
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+opacity: 0.7
+margin-bottom.px: 24
+
+-- ftd.row:
+spacing.fixed.px: 40
+margin-bottom.px: 40
+
+-- ftd.column:
+spacing.fixed.px: 20
+margin-bottom.px: 40
+
+-- ftd.text: $image-with-button.text-1
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+opacity: 0.7
+
+-- ftd.text: $image-with-button.val-1
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 20
+margin-bottom.px: 40
+
+-- ftd.text: $image-with-button.text-2
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+opacity: 0.7
+
+-- ftd.text: $image-with-button.val-2
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.text: $image-with-button.button
+width: fill-container
+text-align: center
+padding-vertical.px: 16
+padding-horizontal.px: 10
+border-width.px if { image-with-button.is-active }: 1
+border-radius.px: 6
+background.linear-gradient : $lg
+$on-mouse-enter$: $ftd.set-bool($a = $image-with-button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $image-with-button.is-active, v = false)
+border-color if { image-with-button.is-active }: $inherited.colors.accent.secondary
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- ftd.image: 
+src: $image-with-button.pic
+width.fixed.percent: 90
+align-self: center
+border-radius.px: 20
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
+
+-- end: ftd.column
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+margin-horizontal.px: 80
+spacing.fixed.px: 56
+
+-- ftd.column:
+;; margin-vertical.px: 215
+
+-- ftd.text: $image-with-button.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text
+margin-bottom.px: 24
+
+-- ftd.text: $image-with-button.body
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-bottom.px: 24
+opacity: 0.7
+
+-- ftd.row:
+spacing.fixed.px: 40
+margin-bottom.px: 40
+
+-- ftd.row:
+spacing.fixed.px: 20
+margin-bottom.px: 40
+
+-- ftd.text: $image-with-button.text-1
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+opacity: 0.7
+
+-- ftd.text: $image-with-button.val-1
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 20
+margin-bottom.px: 40
+
+-- ftd.text: $image-with-button.text-2
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+opacity: 0.7
+
+-- ftd.text: $image-with-button.val-2
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.text: $image-with-button.button
+width: fill-container
+text-align: center
+padding-vertical.px: 20
+padding-horizontal.px: 10
+border-width.px: 1
+border-radius.px: 6
+background.linear-gradient if { image-with-button.is-active }: $lg
+$on-mouse-enter$: $ftd.set-bool($a = $image-with-button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $image-with-button.is-active, v = false)
+border-color: $inherited.colors.accent.secondary
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- ftd.image: 
+width.fixed.percent: 40
+border-radius.px: 20
+src: $image-with-button.pic
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: image-with-button
 
 
 
@@ -545,6 +741,8 @@ margin-bottom.px: 20
 -- ftd.image:
 src: $countdown-with-info.icon
 margin-right.px: 16
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
 
 -- ftd.text: $countdown-with-info.text
 role: $inherited.types.copy-regular
@@ -574,20 +772,26 @@ opacity: 0.7
 
 -- ftd.image: 
 src: $countdown-with-info.pic
-width: fill-container
+width.fixed.percent: 90
 align-self: center
+border-radius.px: 20
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
+
 
 -- end: ftd.column
 
 -- ftd.row:
 if: { ftd.device == "desktop" }
 spacing.fixed.px: 167
-margin-horizontal.px: 120
+margin-horizontal.px: 48
 margin-top.px: 33
 margin-bottom.px: 113
 
 -- ftd.image: 
 src: $countdown-with-info.pic
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
 
 -- ftd.column: 
 
@@ -608,6 +812,8 @@ margin-bottom.px: 40
 -- ftd.image:
 src: $countdown-with-info.icon
 margin-right.px: 16
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
 
 -- ftd.text: $countdown-with-info.text
 role: $inherited.types.copy-regular
@@ -619,8 +825,8 @@ opacity: 0.7
 -- ftd.text: $countdown-with-info.counter
 width: fill-container
 text-align: center
-padding-vertical.px: 20
-padding-horizontal.px: 10
+padding-vertical.px: 24
+padding-horizontal.px: 8
 border-width.px: 1
 border-radius.px: 6
 border-color: $inherited.colors.accent.secondary
@@ -701,8 +907,11 @@ margin-horizontal.px: 20
 
 -- ftd.image:
 src: $image-with-content-mobile.pic
-width: fill-container
+width.fixed.percent: 90
 align-self: center
+border-radius.px: 20
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
 
 -- ftd.column:
 margin-vertical.px: 50
@@ -758,15 +967,20 @@ margin-bottom.px: 100
 
 -- ftd.row:
 spacing.fixed.px: 200
-margin-horizontal.px: 120
+margin-horizontal.px: 80
 
 -- ftd.image:
 src: $image-with-content-desktop.pic
+border-radius.px: 20
 width.fixed.percent: 40
 height: auto
+align-self: center
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
 
 -- ftd.column:
 margin-vertical.px: 50
+align-self: center
 
 -- ftd.text: $image-with-content-desktop.number
 style: bold
@@ -865,14 +1079,18 @@ opacity: 0.7
 
 -- ftd.image:
 src: $about.pic
-width: fill-container
+width.fixed.percent: 90
 align-self: center
+border-radius.px: 20
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
 
 -- end: ftd.column
 
 -- ftd.row:
 if: { ftd.device == "desktop" }
-margin-horizontal.px: 96
+margin-horizontal.px: 80
+spacing.fixed.px: 48
 
 -- ftd.column:
 margin-vertical.px: 120
@@ -891,7 +1109,10 @@ opacity: 0.7
 -- ftd.image:
 src: $about.pic
 border-radius.px: 20
-
+align-self: center
+width.fixed.percent: 45
+border-width.px: 5
+border-color: $inherited.colors.cta-primary.hover
 -- end: ftd.row
 
 -- end: ftd.column
