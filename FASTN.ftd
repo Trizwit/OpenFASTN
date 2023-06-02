@@ -5,6 +5,7 @@
 -- fastn.dependency: fastn-community.github.io/doc-site as ds
 -- fastn.dependency: sarvom.github.io/holy-angel-typography 
 -- fastn.dependency: sarvom.github.io/open-fastn-cs 
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher as dms 
 
 -- fastn.auto-import: ds
 

@@ -1,6 +1,7 @@
 -- import: sarvom.github.io/open-fastn/assets
 -- import: sarvom.github.io/holy-angel-typography 
--- import: sarvom.github.io/open-fastn-cs 
+-- import: sarvom.github.io/open-fastn-cs
+-- import: fastn-community.github.io/dark-mode-switcher as dms 
 
 
 -- component page:
@@ -33,6 +34,8 @@ width: fill-container
 children: $page.c
 
 -- end: ftd.column
+
+-- dms.dark-mode-switcher-float:
 
 -- footer: Powered by
 
