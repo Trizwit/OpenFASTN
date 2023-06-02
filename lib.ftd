@@ -106,6 +106,8 @@ ftd.image-src menu: $assets.files.images.menu.png
 ftd.image-src close: $assets.files.images.close.png
 boolean $open: false
 boolean $is-active: false
+ftd.image-src toggle: $assets.files.images.toggle.png
+boolean $mode: false
 
 -- ftd.column:
 width: fill-container
@@ -122,6 +124,28 @@ padding-horizontal.px: 8
 src: $navbar-mobile.logo
 height.fixed.px: 50
 
+-- ftd.row:
+align-self: center
+spacing.fixed.px: 4
+
+-- ftd.image: 
+if: { !navbar-mobile.mode }
+src: $navbar-mobile.toggle
+height.fixed.px: 24
+width.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $navbar-mobile.mode, v = true)
+$on-click$: $ftd.enable-dark-mode()
+align-self: center
+
+-- ftd.image: 
+if: { navbar-mobile.mode }
+src: $navbar-mobile.toggle
+height.fixed.px: 24
+width.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $navbar-mobile.mode, v = false)
+$on-click$: $ftd.enable-light-mode()
+align-self: center
+
 -- ftd.image:
 if: { !navbar-mobile.open }
 align-self: center
@@ -135,6 +159,8 @@ align-self: center
 height.fixed.px: 14
 src: $navbar-mobile.close
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -407,14 +433,15 @@ body content:
 -- ftd.column:
 width: fill-container
 align-content: center
-margin-top.px: 100
 
 -- ftd.column:
 if: { ftd.device == "mobile" }
+margin-top.px: 24
 
 -- ftd.column:
 width: fill-container
 padding-horizontal.px: 20
+align-content: center
 
 -- ftd.text: $hero.heading
 role: $inherited.types.heading-medium
@@ -427,9 +454,10 @@ css: [ $assets.files.gradient.css ]
 classes: color-2
 
 -- ftd.text: $hero.content
-margin-vertical.px: 24
-role: $inherited.types.copy-regular
+margin-vertical.px: 12
+role: $inherited.types.heading-small
 color: $inherited.colors.text
+text-align: center
 
 -- end: ftd.column
 
@@ -437,6 +465,7 @@ color: $inherited.colors.text
 
 -- ftd.row:
 if: { ftd.device == "desktop" }
+margin-top.px: 100
 
 -- ftd.column:
 margin-horizontal.px: 48
