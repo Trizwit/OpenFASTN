@@ -1,0 +1,106 @@
+-- import: sarvom.github.io/open-fastn/assets
+-- import: sarvom.github.io/open-fastn/lib
+
+
+-- lib.page:
+
+-- lib.hero: OPEN FASTN
+heading: Building a resilient future through
+
+A platform to develop your skills through contributing to community
+
+-- lib.about: About 
+pic: $assets.files.images.opensource.jpg
+
+OPEN FASTN will be a two week long open source contribution to FASTN Web Components 
+Library for supporting the next generation of programmers to build their projects more 
+easily. 
+
+During the campaign, which spans two weeks, participants are encouraged to actively 
+engage with the FASTN Web Components Library and create unique and valuable components. 
+The aim is to gather a diverse range of contributors, including experienced 
+developers and newcomers, fostering an inclusive and supportive community.
+
+-- lib.container-with-title: Why OPEN FASTN?
+
+-- lib.image-with-content: Great opportunity to contribute to the community
+pic: $assets.files.images.community.jpg
+number: 01
+
+Design your drop of 1-5 NFTs and send us your artwork. We get that you're creative, so 
+take note: Sweet supports image, audio and video media assets. Make your NFT drop 
+interesting, engaging and fun.
+
+-- lib.image-with-content: Win exciting swags
+pic: $assets.files.images.swag.jpg
+number: 02
+
+Design your drop of 1-5 NFTs and send us your artwork. We get that you're creative, so 
+take note: Sweet supports image, audio and video media assets. Make your NFT drop 
+interesting, engaging and fun.
+
+-- lib.image-with-content: Get recognized for your contributions.
+pic: $assets.files.images.contributions.png
+number: 03
+
+Design your drop of 1-5 NFTs and send us your artwork. We get that you're creative, so 
+take note: Sweet supports image, audio and video media assets. Make your NFT drop 
+interesting, engaging and fun.
+
+-- end: lib.container-with-title
+
+-- lib.container-with-title: How to contribute?
+
+-- lib.faq: How do I get a crypto wallet?
+
+Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
+wallet. Please note that the max mint number also applies to the public mint time 
+period. If you reach your max mint during the allow list sale, you will not be able to 
+mint more pieces on that wallet even in the public mint window.
+
+-- lib.faq: What is a POAP token?
+
+Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
+wallet. Please note that the max mint number also applies to the public mint time 
+period. If you reach your max mint during the allow list sale, you will not be able to 
+mint more pieces on that wallet even in the public mint window.
+
+-- lib.faq: Which blockchain are these tokens minted on?
+
+Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
+wallet. Please note that the max mint number also applies to the public mint time 
+period. If you reach your max mint during the allow list sale, you will not be able to 
+mint more pieces on that wallet even in the public mint window.
+
+-- lib.faq: Do I have to pay anything to claim this NFT?
+
+Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
+wallet. Please note that the max mint number also applies to the public mint time 
+period. If you reach your max mint during the allow list sale, you will not be able to 
+mint more pieces on that wallet even in the public mint window.
+
+-- lib.faq: How long will it take for the NFT to arrive in my wallet ?
+
+Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
+wallet. Please note that the max mint number also applies to the public mint time 
+period. If you reach your max mint during the allow list sale, you will not be able to 
+mint more pieces on that wallet even in the public mint window.
+
+-- lib.faq: How can I use this POAP token in the future?
+
+Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
+wallet. Please note that the max mint number also applies to the public mint time 
+period. If you reach your max mint during the allow list sale, you will not be able to 
+mint more pieces on that wallet even in the public mint window.
+
+-- lib.faq: Can I trade, sell or give this token to someone else?
+
+Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
+wallet. Please note that the max mint number also applies to the public mint time 
+period. If you reach your max mint during the allow list sale, you will not be able to 
+mint more pieces on that wallet even in the public mint window.
+
+-- end: lib.container-with-title
+
+-- end: lib.page
+
