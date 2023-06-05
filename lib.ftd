@@ -10,7 +10,6 @@ string cta-text-1: Home
 string cta-text-2: About
 string cta-text-3: Partcipate
 string cta-text-4: Contribute
-;; string cta-text-5: FAQs
 string cta-button-1: Partcipate
 children c:
 
@@ -26,7 +25,6 @@ cta-text-1: $page.cta-text-1
 cta-text-2: $page.cta-text-2
 cta-text-3: $page.cta-text-3
 cta-text-4: $page.cta-text-4
-;; cta-text-5: $page.cta-text-5
 cta-button-1: $page.cta-button-1
 
 -- ftd.column:
@@ -71,7 +69,6 @@ cta-text-1: $navbar.cta-text-1
 cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
-cta-text-5: $navbar.cta-text-5
 cta-button-1: $navbar.cta-button-1
 
 -- navbar-desktop:
@@ -81,7 +78,6 @@ cta-text-1: $navbar.cta-text-1
 cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
-cta-text-5: $navbar.cta-text-5
 cta-button-1: $navbar.cta-button-1
 
 -- end: ftd.column
@@ -103,13 +99,11 @@ string cta-text-1:
 string cta-text-2:
 string cta-text-3:
 optional string cta-text-4:
-optional string cta-text-5:
 string cta-button-1:
 ftd.image-src menu: $assets.files.images.menu.png
 ftd.image-src close: $assets.files.images.close.png
 boolean $open: false
 boolean $is-active: false
-;; ftd.image-src toggle: $assets.files.images.toggle.png
 boolean $mode: false
 
 -- ftd.column:
@@ -126,28 +120,11 @@ padding-horizontal.px: 8
 -- ftd.image:
 src: $navbar-mobile.logo
 height.fixed.px: 50
+link: https://www.trizwit.com/
 
 -- ftd.row:
 align-self: center
 spacing.fixed.px: 4
-
-;; -- ftd.image: 
-;; if: { !navbar-mobile.mode }
-;; src: $navbar-mobile.toggle
-;; height.fixed.px: 24
-;; width.fixed.px: 24
-;; $on-click$: $ftd.set-bool($a = $navbar-mobile.mode, v = true)
-;; $on-click$: $ftd.enable-dark-mode()
-;; align-self: center
-
-;; -- ftd.image: 
-;; if: { navbar-mobile.mode }
-;; src: $navbar-mobile.toggle
-;; height.fixed.px: 24
-;; width.fixed.px: 24
-;; $on-click$: $ftd.set-bool($a = $navbar-mobile.mode, v = false)
-;; $on-click$: $ftd.enable-light-mode()
-;; align-self: center
 
 -- ftd.image:
 if: { !navbar-mobile.open }
@@ -178,6 +155,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
 color: $inherited.colors.text
+link: /
 
 -- ftd.text: $navbar-mobile.cta-text-2
 role: $inherited.types.label-large
@@ -191,6 +169,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
 color: $inherited.colors.text
+link: index.html#participate
 
 -- ftd.text: $navbar-mobile.cta-text-4
 if: {navbar-mobile.cta-text-4 != NULL}
@@ -198,13 +177,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
 color: $inherited.colors.text
-
--- ftd.text: $navbar-mobile.cta-text-5
-if: {navbar-mobile.cta-text-5 != NULL}
-role: $inherited.types.label-large
-text-align: center
-margin-horizontal.px: 32
-color: $inherited.colors.text
+link: index.html#contribute
 
 -- ftd.column:
 width: fill-container
@@ -252,7 +225,6 @@ optional string cta-text-4:
 optional string cta-text-5:
 string cta-button-1:
 boolean $is-active: false
-;; ftd.image-src toggle: $assets.files.images.toggle.png
 boolean $mode: false
 
 -- ftd.row:
@@ -281,6 +253,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-horizontal.px: 32
 color: $inherited.colors.text
+link: /
 
 -- ftd.text: $navbar-desktop.cta-text-2
 role: $inherited.types.label-large
@@ -402,6 +375,7 @@ align-self: center
 
 -- ftd.image: $footer.logo
 height.fixed.px: 60
+link: https://www.trizwit.com/
 
 -- end: ftd.row
 
