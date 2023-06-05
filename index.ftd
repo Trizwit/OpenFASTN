@@ -23,10 +23,10 @@ developers and newcomers, fostering an inclusive and supportive community.
 
 -- lib.image-with-button: OPEN FASTN Campaign
 pic: $assets.files.images.open-fastn.png
-text-1: **Starts on** : 
-text-2: **Ends on** : 
-val-1: 5th June 2023
-val-2: 19th June 2023
+text-1: **Save the Date** : 
+text-2: **Who can participate** : 
+val-1: 7th June 2023 to 21th June 2023
+val-2: All are welcome
 button: Participate
 
 Throughout the two-week duration of OPEN FASTN, participants will have access to 
