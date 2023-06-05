@@ -238,7 +238,7 @@ sticky: true
 src: $navbar-desktop.logo
 align-self: center
 height.fixed.px: 72
-
+link: https://www.trizwit.com/
 
 -- ftd.row:
 width: fill-container
