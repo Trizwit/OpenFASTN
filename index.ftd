@@ -1,5 +1,5 @@
--- import: sarvom.github.io/open-fastn/assets
--- import: sarvom.github.io/open-fastn/lib
+-- import: openfastn.trizwit.com/assets
+-- import: openfastn.trizwit.com/lib
 
 
 -- lib.page:
