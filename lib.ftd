@@ -224,6 +224,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $navbar-mobile.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-mobile.is-active, v = false)
 background.linear-gradient: $lg
 color: $inherited.colors.text
+link: https://github.com/Trizwit/FastnUI#readme
 
 -- end: ftd.column
 
@@ -330,24 +331,7 @@ border-color if { navbar-desktop.is-active }: $inherited.colors.cta-primary.hove
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active, v = false)
 color: $inherited.colors.text-strong
-
-;; ftd.image: 
-;; if: { !navbar-desktop.mode }
-;; src: $navbar-desktop.toggle
-;; height.fixed.px: 32
-;; width.fixed.px: 32
-;; $on-click$: $ftd.set-bool($a = $navbar-desktop.mode, v = true)
-;; $on-click$: $ftd.enable-dark-mode()
-;; align-self: center
-
-;;  ftd.image: 
-;; if: { navbar-desktop.mode }
-;; src: $navbar-desktop.toggle
-;; height.fixed.px: 32
-;; width.fixed.px: 32
-;; $on-click$: $ftd.set-bool($a = $navbar-desktop.mode, v = false)
-;; $on-click$: $ftd.enable-light-mode()
-;; align-self: center
+link: https://github.com/Trizwit/FastnUI#readme
 
 -- end: ftd.row
 
@@ -369,11 +353,11 @@ color: $inherited.colors.text-strong
 caption text:
 ftd.image-src logo: $assets.files.images.logo.png
 ftd.image-src icon-1: $assets.files.images.linkedin.png
-ftd.image-src icon-2: $assets.files.images.twitter.png
-ftd.image-src icon-3: $assets.files.images.github.png
-string url-1: /
-string url-2: /
-string url-3: /
+ftd.image-src icon-2: $assets.files.images.github.png
+ftd.image-src icon-3: $assets.files.images.twitter.png
+string url-1: https://www.linkedin.com/company/trizwit/
+string url-2: https://github.com/Trizwit
+string url-3: https://twitter.com/trizwit
 
 -- ftd.column:
 align-self: center
@@ -597,9 +581,10 @@ border-radius.px: 6
 background.linear-gradient : $lg
 $on-mouse-enter$: $ftd.set-bool($a = $image-with-button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $image-with-button.is-active, v = false)
-border-color if { image-with-button.is-active }: $inherited.colors.accent.secondary
+border-color if { image-with-button.is-active }: $inherited.colors.cta-primary.hover
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+link: https://github.com/Trizwit/FastnUI#readme
 
 -- end: ftd.column
 
