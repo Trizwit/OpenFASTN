@@ -477,6 +477,87 @@ color: $inherited.colors.text
 
 
 
+-- component about:
+ftd.image-src pic:
+caption title:
+body body:
+
+-- ftd.column:
+padding-horizontal.px: 10
+margin-vertical.px if { ftd.device == "desktop" } : 100
+id: about
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+margin-vertical.px: 24
+
+-- ftd.column:
+margin-vertical.px: 40
+margin-horizontal.px: 32
+
+-- ftd.text: $about.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+
+-- ftd.text: $about.body
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+opacity: 0.7
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $about.pic
+width.fixed.percent: 90
+align-self: center
+border-radius.px: 20
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
+
+-- end: ftd.column
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+margin-horizontal.px: 80
+spacing.fixed.px: 48
+
+-- ftd.column:
+margin-vertical.px: 120
+
+-- ftd.text: $about.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+
+-- ftd.text: $about.body
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+opacity: 0.7
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $about.pic
+border-radius.px: 20
+align-self: center
+width.fixed.percent: 45
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: about
+
+
+
+
+
+
+
+
+
+
 -- component image-with-button:
 ftd.image-src pic:
 caption title:
@@ -503,6 +584,7 @@ spacing.fixed.px: 56
 -- ftd.text: $image-with-button.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text
+text-align: center
 margin-bottom.px: 24
 
 -- ftd.text: $image-with-button.body
@@ -569,8 +651,6 @@ src: $image-with-button.pic
 width.fixed.percent: 90
 align-self: center
 border-radius.px: 20
-;; border-width.px: 5
-;; border-color: $inherited.colors.cta-primary.hover
 
 -- end: ftd.column
 
@@ -637,7 +717,7 @@ border-radius.px: 6
 background.linear-gradient if { image-with-button.is-active }: $lg
 $on-mouse-enter$: $ftd.set-bool($a = $image-with-button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $image-with-button.is-active, v = false)
-border-color: $inherited.colors.accent.secondary
+border-color: $inherited.colors.accent.primary
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
 
@@ -655,160 +735,6 @@ src: $image-with-button.pic
 -- end: ftd.column
 
 -- end: image-with-button
-
-
-
-
-
-
-
-
-
-
--- component countdown-with-info:
-ftd.image-src pic:
-caption title:
-string heading:
-ftd.image-src icon:
-string text:
-string counter:
-string reminder:
-
-
--- ftd.column:
-width: fill-container
-margin-bottom.px: 100
-
--- ftd.column:
-if: { ftd.device == "mobile" }
-margin-horizontal.px: 20
-margin-vertical.px: 32
-
--- ftd.column: 
-margin-vertical.px: 32
-
--- ftd.text: $countdown-with-info.title
-role: $inherited.types.heading-small
-color: $inherited.colors.text
-margin-bottom.px: 20
-
--- ftd.text: $countdown-with-info.heading
-role: $inherited.types.heading-medium
-css: [ $assets.files.gradient.css ]
-classes: color-2
-margin-bottom.px: 20
-
--- ftd.row:
-margin-bottom.px: 20
-
--- ftd.image:
-src: $countdown-with-info.icon
-margin-right.px: 16
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
-
--- ftd.text: $countdown-with-info.text
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-opacity: 0.7
-
--- end: ftd.row
-
--- ftd.text: $countdown-with-info.counter
-width: fill-container
-text-align: center
-padding-vertical.px: 20
-padding-horizontal.px: 10
-border-width.px: 1
-border-radius.px: 6
-border-color: $inherited.colors.accent.secondary
-role: $inherited.types.copy-small
-color: $inherited.colors.text
-
--- ftd.text: $countdown-with-info.reminder
-role: $inherited.types.copy-small
-color: $inherited.colors.text
-margin-top.px: 8
-opacity: 0.7
-
--- end: ftd.column
-
--- ftd.image: 
-src: $countdown-with-info.pic
-width.fixed.percent: 90
-align-self: center
-border-radius.px: 20
-;; border-width.px: 5
-;; border-color: $inherited.colors.cta-primary.hover
-
-
--- end: ftd.column
-
--- ftd.row:
-if: { ftd.device == "desktop" }
-spacing.fixed.px: 167
-margin-horizontal.px: 48
-margin-top.px: 33
-margin-bottom.px: 113
-
--- ftd.image: 
-src: $countdown-with-info.pic
-;; border-width.px: 5
-;; border-color: $inherited.colors.cta-primary.hover
-
--- ftd.column: 
-
--- ftd.text: $countdown-with-info.title
-role: $inherited.types.heading-small
-color: $inherited.colors.text
-margin-bottom.px: 40
-
--- ftd.text: $countdown-with-info.heading
-role: $inherited.types.heading-medium
-css: [ $assets.files.gradient.css ]
-classes: color-2
-margin-bottom.px: 40
-
--- ftd.row:
-margin-bottom.px: 40
-
--- ftd.image:
-src: $countdown-with-info.icon
-margin-right.px: 16
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
-
--- ftd.text: $countdown-with-info.text
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-opacity: 0.7
-
--- end: ftd.row
-
--- ftd.text: $countdown-with-info.counter
-width: fill-container
-text-align: center
-padding-vertical.px: 24
-padding-horizontal.px: 8
-border-width.px: 1
-border-radius.px: 6
-border-color: $inherited.colors.accent.secondary
-role: $inherited.types.copy-small
-color: $inherited.colors.text
-
--- ftd.text: $countdown-with-info.reminder
-role: $inherited.types.copy-small
-color: $inherited.colors.text
-margin-top.px: 8
-opacity: 0.7
-
--- end: ftd.column
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: countdown-with-info
 
 
 
@@ -1002,87 +928,6 @@ children: $container-with-title.c
 -- end: ftd.column
 
 -- end: container-with-title
-
-
-
-
-
-
-
-
-
-
--- component about:
-ftd.image-src pic:
-caption title:
-body body:
-
--- ftd.column:
-padding-horizontal.px: 10
-margin-vertical.px if { ftd.device == "desktop" } : 100
-id: about
-
--- ftd.column:
-if: { ftd.device == "mobile" }
-margin-vertical.px: 24
-
--- ftd.column:
-margin-vertical.px: 40
-margin-horizontal.px: 32
-
--- ftd.text: $about.title
-role: $inherited.types.heading-large
-color: $inherited.colors.text
-
--- ftd.text: $about.body
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-opacity: 0.7
-
--- end: ftd.column
-
--- ftd.image:
-src: $about.pic
-width.fixed.percent: 90
-align-self: center
-border-radius.px: 20
-;; border-width.px: 5
-;; border-color: $inherited.colors.cta-primary.hover
-
--- end: ftd.column
-
--- ftd.row:
-if: { ftd.device == "desktop" }
-margin-horizontal.px: 80
-spacing.fixed.px: 48
-
--- ftd.column:
-margin-vertical.px: 120
-
--- ftd.text: $about.title
-role: $inherited.types.heading-large
-color: $inherited.colors.text
-
--- ftd.text: $about.body
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-opacity: 0.7
-
--- end: ftd.column
-
--- ftd.image:
-src: $about.pic
-border-radius.px: 20
-align-self: center
-width.fixed.percent: 45
-;; border-width.px: 5
-;; border-color: $inherited.colors.cta-primary.hover
-
--- end: ftd.row
-
--- end: ftd.column
-
--- end: about
 
 
 
