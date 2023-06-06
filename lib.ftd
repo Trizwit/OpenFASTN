@@ -420,6 +420,7 @@ margin-bottom.px: 20
 
 -- ftd.text: $hero.title
 role: $inherited.types.heading-hero
+text-align: center
 css: [ $assets.files.gradient.css ]
 classes: color-2
 
@@ -457,6 +458,8 @@ classes: color-2
 -- ftd.text: $hero.content
 margin-top.px: 24
 margin-bottom.px: 48
+text-align: center
+margin-horizontal.percent: 10
 role: $inherited.types.heading-medium
 color: $inherited.colors.text
 
@@ -484,7 +487,6 @@ body body:
 
 -- ftd.column:
 padding-horizontal.px: 10
-margin-vertical.px if { ftd.device == "desktop" } : 100
 id: about
 
 -- ftd.column:
@@ -540,8 +542,6 @@ src: $about.pic
 border-radius.px: 20
 align-self: center
 width.fixed.percent: 45
-;; border-width.px: 5
-;; border-color: $inherited.colors.cta-primary.hover
 
 -- end: ftd.row
 
