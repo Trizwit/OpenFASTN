@@ -197,7 +197,7 @@ background.solid if { navbar-mobile.is-active }: $inherited.colors.text-strong
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-mobile.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-mobile.is-active, v = false)
 color: $inherited.colors.text-strong
-color if { navbar-mobile.is-active }: $inherited.colors.cta-primary.hover
+color if { navbar-mobile.is-active }: $inherited.colors.accent.primary
 link: https://github.com/Trizwit/FastnUI#readme
 
 -- end: ftd.column
@@ -305,7 +305,7 @@ background.solid if { navbar-desktop.is-active }: $inherited.colors.text-strong
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active, v = false)
 color: $inherited.colors.text-strong
-color if { navbar-desktop.is-active }: $inherited.colors.cta-primary.hover
+color if { navbar-desktop.is-active }: $inherited.colors.accent.primary
 link: https://github.com/Trizwit/FastnUI#readme
 
 -- end: ftd.row
