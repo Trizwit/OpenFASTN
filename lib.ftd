@@ -196,7 +196,7 @@ border-color if { navbar-mobile.is-active }: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-mobile.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-mobile.is-active, v = false)
 background.linear-gradient: $lg
-color: $inherited.colors.text
+color : $inherited.colors.text
 link: https://github.com/Trizwit/FastnUI#readme
 
 -- end: ftd.column
@@ -298,12 +298,13 @@ text-align: center
 padding-vertical.px: 12
 padding-horizontal.px: 32
 border-radius.px: 4
-border-width.px: 2
-background.linear-gradient: $lg
-border-color if { navbar-desktop.is-active }: $inherited.colors.cta-primary.hover
+border-width.px: 0
+background.linear-gradient : $lg
+background.solid if { navbar-desktop.is-active }: $inherited.colors.text-strong
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-desktop.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-desktop.is-active, v = false)
 color: $inherited.colors.text-strong
+color if { navbar-desktop.is-active }: $inherited.colors.cta-primary.hover
 link: https://github.com/Trizwit/FastnUI#readme
 
 -- end: ftd.row
@@ -567,8 +568,8 @@ src: $image-with-button.pic
 width.fixed.percent: 90
 align-self: center
 border-radius.px: 20
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
 
 -- end: ftd.column
 
@@ -645,8 +646,8 @@ color: $inherited.colors.text-strong
 width.fixed.percent: 40
 border-radius.px: 20
 src: $image-with-button.pic
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
 
 -- end: ftd.row
 
@@ -736,8 +737,8 @@ src: $countdown-with-info.pic
 width.fixed.percent: 90
 align-self: center
 border-radius.px: 20
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
 
 
 -- end: ftd.column
@@ -751,8 +752,8 @@ margin-bottom.px: 113
 
 -- ftd.image: 
 src: $countdown-with-info.pic
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
 
 -- ftd.column: 
 
@@ -871,8 +872,8 @@ src: $image-with-content-mobile.pic
 width.fixed.percent: 90
 align-self: center
 border-radius.px: 20
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
 
 -- ftd.column:
 margin-vertical.px: 50
@@ -936,8 +937,8 @@ border-radius.px: 20
 width.fixed.percent: 40
 height: auto
 align-self: center
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
 
 -- ftd.column:
 margin-vertical.px: 50
@@ -1044,8 +1045,8 @@ src: $about.pic
 width.fixed.percent: 90
 align-self: center
 border-radius.px: 20
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
 
 -- end: ftd.column
 
@@ -1073,8 +1074,9 @@ src: $about.pic
 border-radius.px: 20
 align-self: center
 width.fixed.percent: 45
-border-width.px: 5
-border-color: $inherited.colors.cta-primary.hover
+;; border-width.px: 5
+;; border-color: $inherited.colors.cta-primary.hover
+
 -- end: ftd.row
 
 -- end: ftd.column
