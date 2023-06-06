@@ -720,6 +720,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $image-with-button.is-active, v = false)
 border-color: $inherited.colors.accent.primary
 role: $inherited.types.copy-regular
 color: $inherited.colors.text-strong
+link: https://github.com/Trizwit/FastnUI#readme
 
 -- end: ftd.column
 
