@@ -79,7 +79,7 @@ development workflows.
 -- lib.container-with-title: How to contribute?
 
 -- ftd.iframe:
-youtube: https://youtu.be/6jCzqGYMNu4
+youtube: https://youtu.be/3ardRc2R-OY
 width: fill-container
 height.fixed.px if { ftd.device == "desktop" }: 768
 padding-horizontal.px if { ftd.device == "desktop" }: 120
