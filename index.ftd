@@ -58,26 +58,28 @@ development and empower the next generation of programmers.
 pic: $assets.files.images.contributions.png
 number: 03
 
-OPEN FASTN encourages a spirit of learning and exploration. Whether you are a seasoned developer looking to 
-expand your expertise or someone new to the world of programming, the campaign offers a 
-platform to grow and develop your skills. It also serves as an excellent opportunity to 
-gain practical experience with open source contribution and collaborative development 
-workflows.
+OPEN FASTN encourages a spirit of learning and exploration. Whether you are a seasoned 
+developer looking to expand your expertise or someone new to the world of programming, 
+the campaign offers a platform to grow and develop your skills. It also serves as an 
+excellent opportunity to gain practical experience with open source contribution and 
+collaborative development workflows.
 
 -- lib.image-with-content: Grow through learning and skill-building
 pic: $assets.files.images.skill.png
 number: 04
 
-Design your drop of 1-5 NFTs and send us your artwork. We get that you're creative, so 
-take note: Sweet supports image, audio and video media assets. Make your NFT drop 
-interesting, engaging and fun.
+OPEN FASTN encourages a spirit of learning and exploration. Whether you are a seasoned 
+developer looking to expand your expertise or someone new to the world of programming, the 
+campaign offers a platform to grow and develop your skills. It also serves as an excellent 
+opportunity to gain practical experience with open source contribution and collaborative 
+development workflows.
 
 -- end: lib.container-with-title
 
 -- lib.container-with-title: How to contribute?
 
 -- ftd.iframe:
-youtube: https://www.youtube.com/watch?v=yzeVMecydCE
+youtube: https://youtu.be/6jCzqGYMNu4
 width: fill-container
 height.fixed.px if { ftd.device == "desktop" }: 768
 padding-horizontal.px if { ftd.device == "desktop" }: 120
@@ -107,10 +109,9 @@ Create Pull Request to [Trizwit/FastnUI](https://github.com/Trizwit/FastnUI) Lib
 
 -- lib.faq: Share your work in OPEN FASTN Channel in FASTN Discord Server.
 
-Anyone on the final allow list may mint up to three (3) NFTs in the Collection per 
-wallet. Please note that the max mint number also applies to the public mint time 
-period. If you reach your max mint during the allow list sale, you will not be able to 
-mint more pieces on that wallet even in the public mint window.
+Share your work in 
+[OPEN FASTN Channel](https://discord.com/channels/793929082483769345/1115150105411063902) 
+in FASTN Discord Server.
 
 
 -- end: lib.container-with-title
