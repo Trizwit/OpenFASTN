@@ -231,6 +231,7 @@ boolean $mode: false
 -- ftd.row:
 width: fill-container
 height: hug-content
+align-self: center
 margin-vertical.px: 8
 padding-horizontal.px: 50
 sticky: true
